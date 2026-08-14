@@ -8,6 +8,7 @@ int demChuSo(int n){
   return count;
 }
 
+
 int tongChuSo(int n){
   int sum = 0;
 
@@ -17,6 +18,7 @@ int tongChuSo(int n){
   }
   return sum;
 }
+
 
 int kiemTraLe(int n){
   int flag = 1;
@@ -29,4 +31,21 @@ int kiemTraLe(int n){
     n ~/= 10;
   }
   return flag;
+}
+
+
+int timMax(int n){
+  int max = -1000000;
+  int max2 = -1000000;
+  while (n > 0){
+    max = n % 10;
+
+    if (max > max2){
+      max2 = max;
+    }
+
+    n ~/= 10;
+  }
+
+  return max2;
 }
