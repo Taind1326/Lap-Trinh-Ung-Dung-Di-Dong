@@ -49,3 +49,40 @@ int timMax(int n){
 
   return max2;
 }
+
+
+bool isPrime(int n){
+  if (n < 2){
+    return false;
+  }
+
+  for (int i = 2; i*i <= n; i++){
+    if (i % 2 == 0){
+      return false;
+    }
+  }
+
+  return true;
+
+}
+
+
+int kiemTraSNT(int n){
+  int temp = 0;
+  int flag = 1;
+
+  while (n > 0){
+    temp = n % 10;
+
+    if (isPrime(temp)){
+      flag = 0;
+      break;
+    }
+
+  n ~/= 10;
+
+  }
+
+  return flag;
+  
+}

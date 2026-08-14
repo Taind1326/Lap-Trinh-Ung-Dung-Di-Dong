@@ -21,5 +21,13 @@ void main(List<String>ArgumentError){
   else{
     print('n không chứa số lẻ!');
   }*/
-  print('Chữ số lớn nhất trong n là: ${bai_2.timMax(n)}');
+  //print('Chữ số lớn nhất trong n là: ${bai_2.timMax(n)}');
+  int snt = bai_2.kiemTraSNT(n);
+  if (snt == 0){
+    print('n có chứa số nguyên tố!');
+  }
+
+  else {
+    print('n không có chứa snt!');
+  }
 }
