@@ -2,10 +2,10 @@ import 'package:buoi_1/bai_1.dart' as bai_1;
 import 'dart:io';
 
 List nhap(){
-  stdout.write("Nhập số nguyên > 0: ");
+  stdout.write("Nhập số que kem (lớn hơn 0): ");
   int soLuong = int.parse(stdin.readLineSync()!);
 
-  stdout.write("Nhập giá tiền: ");
+  stdout.write("Nhập giá tiền que kem: ");
   double donGia = double.parse(stdin.readLineSync()!);
 
   return [soLuong, donGia];
