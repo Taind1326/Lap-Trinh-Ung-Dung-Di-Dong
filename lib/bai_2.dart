@@ -17,3 +17,16 @@ int tongChuSo(int n){
   }
   return sum;
 }
+
+int kiemTraLe(int n){
+  int flag = 1;
+
+  while (n > 0){
+    if (n % 2 != 0){
+      flag = 0;
+      break;
+    }
+    n ~/= 10;
+  }
+  return flag;
+}
